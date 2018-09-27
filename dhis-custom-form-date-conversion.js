@@ -33,6 +33,7 @@ $(document).ready(function(){
 			$('.ui-datepicker-cmd-close').trigger("click");
 		}
 	});
+	//testing Git
 	
 	/**************** End of registration *******************************/
 	
