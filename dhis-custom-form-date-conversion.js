@@ -10,9 +10,9 @@ $(document).ready(function(){
 			var bsConvertor = new BikramSambatConverter();
 			var npDate = String(dates);
 			var enDate = bsConvertor.nep_to_eng(npDate.substring(0,4), npDate.substring(5,7), npDate.substring(8,10));
-			$("d2-custom-registration-form input[name=dateOfEnrollment]").val(enDate.year+"-"+enDate.month+"-"+enDate.date);
-			$("d2-custom-registration-form input[name=dateOfEnrollment]").trigger("change");
-			$("d2-custom-registration-form input[name=dateOfEnrollment]").trigger("blur");
+			$("d2-custom-registration-form input[name=enrollmentDate]").val(enDate.year+"-"+enDate.month+"-"+enDate.date);
+			$("d2-custom-registration-form input[name=enrollmentDate]").trigger("change");
+			$("d2-custom-registration-form input[name=enrollmentDate]").trigger("blur");
 			$('.ui-datepicker-cmd-close').trigger("click");
 		}
 	});
