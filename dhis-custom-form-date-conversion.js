@@ -49,9 +49,9 @@ $(document).ready(function(){
 			var bsConvertor = new BikramSambatConverter();
 			var npDate = String(dates);
 			var enDate = bsConvertor.nep_to_eng(npDate.substring(0,4), npDate.substring(5,7), npDate.substring(8,10));
-			$("d2-custom-data-entry-form #ZJ4pp4MaqOg-UAfg0mQNUzY-val").val(enDate.year+"-"+enDate.month+"-"+enDate.date);
-			$("d2-custom-data-entry-form #ZJ4pp4MaqOg-UAfg0mQNUzY-val").trigger("change");
-			$("d2-custom-data-entry-form #ZJ4pp4MaqOg-UAfg0mQNUzY-val").trigger("blur");
+			$("d2-custom-data-entry-form #ZJ4pp4MaqOg-VtjK3vFGeI6-val").val(enDate.year+"-"+enDate.month+"-"+enDate.date);
+			$("d2-custom-data-entry-form #ZJ4pp4MaqOg-VtjK3vFGeI6-val").trigger("change");
+			$("d2-custom-data-entry-form #ZJ4pp4MaqOg-VtjK3vFGeI6-val").trigger("blur");
 			$('.ui-datepicker-cmd-close').trigger("click");
 		}
 	});
