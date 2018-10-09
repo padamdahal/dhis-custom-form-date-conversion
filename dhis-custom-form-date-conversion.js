@@ -39,13 +39,12 @@ $(document).ready(function(){
 	
 	/***************** Admission and Diagnosis stage *********************/
 	// Date of onset symptoms
-	//$("d2-custom-data-entry-form #ZJ4pp4MaqOg-VtjK3vFGeI6-val").css('visibility','hidden');
+	$("d2-custom-data-entry-form #ZJ4pp4MaqOg-VtjK3vFGeI6-val").css('visibility','hidden');
 	
 	$("d2-custom-data-entry-form #ZJ4pp4MaqOg-UAfg0mQNUzY-val").calendarsPicker({
 		calendar: $.calendars.instance('nepali'),
 		dateFormat: 'yyyy-mm-dd',
-		onSelect: function(dates) {
-			alert("hello");
+		onSelect: function(dates) {			
 			$("d2-custom-data-entry-form #ZJ4pp4MaqOg-UAfg0mQNUzY-val").trigger("change");
 			$("d2-custom-data-entry-form #ZJ4pp4MaqOg-UAfg0mQNUzY-val").trigger("blur");
 			var bsConvertor = new BikramSambatConverter();
