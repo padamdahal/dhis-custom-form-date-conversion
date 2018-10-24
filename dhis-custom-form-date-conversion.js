@@ -130,36 +130,36 @@ $(document).ready(function(){
 	
 	/******************* KA Treatment ********************/
 	// Date start of treatment
-	$("d2-custom-data-entry-form #WVQK4LfI6mI-XCXlfeHO9Nl-val").calendarsPicker({
+	$("d2-custom-data-entry-form #wqxIyvDXU8R-XCXlfeHO9Nl-val").calendarsPicker({
 		calendar: $.calendars.instance('nepali'),
 		dateFormat: 'yyyy-mm-dd',
 		onSelect: function(dates) {
-			$("d2-custom-data-entry-form #WVQK4LfI6mI-XCXlfeHO9Nl-val").trigger("change");
-			$("d2-custom-data-entry-form #WVQK4LfI6mI-XCXlfeHO9Nl-val").trigger("blur");
+			$("d2-custom-data-entry-form #wqxIyvDXU8R-XCXlfeHO9Nl-val").trigger("change");
+			$("d2-custom-data-entry-form #wqxIyvDXU8R-XCXlfeHO9Nl-val").trigger("blur");
 			var bsConvertor = new BikramSambatConverter();
 			var npDate = String(dates);
 			var enDate = bsConvertor.nep_to_eng(npDate.substring(0,4), npDate.substring(5,7), npDate.substring(8,10));
-			$("d2-custom-data-entry-form #WVQK4LfI6mI-zTlG07vQQ52-val").val(enDate.year+"-"+enDate.month+"-"+enDate.date);
-			$("d2-custom-data-entry-form #WVQK4LfI6mI-zTlG07vQQ52-val").trigger("change");
-			$("d2-custom-data-entry-form #WVQK4LfI6mI-zTlG07vQQ52-val").trigger("blur");
+			$("d2-custom-data-entry-form #wqxIyvDXU8R-zTlG07vQQ52-val").val(enDate.year+"-"+enDate.month+"-"+enDate.date);
+			$("d2-custom-data-entry-form #wqxIyvDXU8R-zTlG07vQQ52-val").trigger("change");
+			$("d2-custom-data-entry-form #wqxIyvDXU8R-zTlG07vQQ52-val").trigger("blur");
 			
 			$('.ui-datepicker-cmd-close').trigger("click");
 		}
 	});
 	
 	// End of treatment date
-	$("d2-custom-data-entry-form #WVQK4LfI6mI-FPtwX42RYUO-val").calendarsPicker({
+	$("d2-custom-data-entry-form #wqxIyvDXU8R-FPtwX42RYUO-val").calendarsPicker({
 		calendar: $.calendars.instance('nepali'),
 		dateFormat: 'yyyy-mm-dd',
 		onSelect: function(dates) {
-			$("d2-custom-data-entry-form #WVQK4LfI6mI-FPtwX42RYUO-val").trigger("change");
-			$("d2-custom-data-entry-form #WVQK4LfI6mI-FPtwX42RYUO-val").trigger("blur");
+			$("d2-custom-data-entry-form #wqxIyvDXU8R-FPtwX42RYUO-val").trigger("change");
+			$("d2-custom-data-entry-form #wqxIyvDXU8R-FPtwX42RYUO-val").trigger("blur");
 			var bsConvertor = new BikramSambatConverter();
 			var npDate = String(dates);
 			var enDate = bsConvertor.nep_to_eng(npDate.substring(0,4), npDate.substring(5,7), npDate.substring(8,10));
-			$("d2-custom-data-entry-form #WVQK4LfI6mI-IdpQZvbXUOy-val").val(enDate.year+"-"+enDate.month+"-"+enDate.date);
-			$("d2-custom-data-entry-form #WVQK4LfI6mI-IdpQZvbXUOy-val").trigger("change");
-			$("d2-custom-data-entry-form #WVQK4LfI6mI-IdpQZvbXUOy-val").trigger("blur");
+			$("d2-custom-data-entry-form #wqxIyvDXU8R-IdpQZvbXUOy-val").val(enDate.year+"-"+enDate.month+"-"+enDate.date);
+			$("d2-custom-data-entry-form #wqxIyvDXU8R-IdpQZvbXUOy-val").trigger("change");
+			$("d2-custom-data-entry-form #wqxIyvDXU8R-IdpQZvbXUOy-val").trigger("blur");
 			
 			$('.ui-datepicker-cmd-close').trigger("click");
 		}
