@@ -3,7 +3,9 @@ $(document).ready(function(){
 	// Date of admission
 	$("d2-custom-registration-form input[name=sc3Rnbby1d3]").calendarsPicker({
 		calendar: $.calendars.instance('nepali'),
-		minDate: '1900-01-01',
+		yearRange: '-120:+30',
+		duration: "fast",
+	    showAnim: "",
 		dateFormat: 'yyyy-mm-dd',
 		onSelect: function(dates) {
 			$("d2-custom-registration-form input[name=sc3Rnbby1d3]").trigger("change");
