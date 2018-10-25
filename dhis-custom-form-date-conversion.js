@@ -23,6 +23,9 @@ $(document).ready(function(){
 	// Date of birth
 	$("d2-custom-registration-form input[name=zl67CJrVriH]").calendarsPicker({
 		calendar: $.calendars.instance('nepali'),
+		yearRange: '-120:+30',
+		duration: "fast",
+	    showAnim: "",
 		dateFormat: 'yyyy-mm-dd',
 		onSelect: function(dates) {
 			$("d2-custom-registration-form input[name=zl67CJrVriH]").trigger("change");
@@ -46,6 +49,9 @@ $(document).ready(function(){
 	
 	$("d2-custom-data-entry-form #ZJ4pp4MaqOg-UAfg0mQNUzY-val").calendarsPicker({
 		calendar: $.calendars.instance('nepali'),
+		yearRange: '-120:+30',
+		duration: "fast",
+	    showAnim: "",
 		dateFormat: 'yyyy-mm-dd',
 		onSelect: function(dates) {			
 			$("d2-custom-data-entry-form #ZJ4pp4MaqOg-UAfg0mQNUzY-val").trigger("change");
@@ -63,6 +69,9 @@ $(document).ready(function(){
 	/*
 	$("d2-custom-data-entry-form #ZJ4pp4MaqOg-UAfg0mQNUzY-val").calendarsPicker({
 		calendar: $.calendars.instance('nepali'),
+		yearRange: '-120:+30',
+		duration: "fast",
+	    showAnim: "",
 		dateFormat: 'yyyy-mm-dd',
 		onSelect: function(dates) {
 			console.log("inside onset textbox");
@@ -81,6 +90,9 @@ $(document).ready(function(){
 	// Date of RK39
 	$("d2-custom-data-entry-form #ZJ4pp4MaqOg-LwFM4VWRbUv-val").calendarsPicker({
 		calendar: $.calendars.instance('nepali'),
+		yearRange: '-120:+30',
+		duration: "fast",
+	    showAnim: "",
 		dateFormat: 'yyyy-mm-dd',
 		onSelect: function(dates) {
 			$("d2-custom-data-entry-form #ZJ4pp4MaqOg-LwFM4VWRbUv-val").trigger("change");
@@ -98,6 +110,9 @@ $(document).ready(function(){
 	// Date of BM Nepali
 	$("d2-custom-data-entry-form #ZJ4pp4MaqOg-xXHjgvwOwQv-val").calendarsPicker({
 		calendar: $.calendars.instance('nepali'),
+		yearRange: '-120:+30',
+		duration: "fast",
+	    showAnim: "",
 		dateFormat: 'yyyy-mm-dd',
 		onSelect: function(dates) {
 			$("d2-custom-data-entry-form #ZJ4pp4MaqOg-xXHjgvwOwQv-val").trigger("change");
@@ -115,6 +130,9 @@ $(document).ready(function(){
 	// Date of SP
 	$("d2-custom-data-entry-form #ZJ4pp4MaqOg-PWz8yLdbkeg-val").calendarsPicker({
 		calendar: $.calendars.instance('nepali'),
+		yearRange: '-120:+30',
+		duration: "fast",
+	    showAnim: "",
 		dateFormat: 'yyyy-mm-dd',
 		onSelect: function(dates) {
 			$("d2-custom-data-entry-form #ZJ4pp4MaqOg-PWz8yLdbkeg-val").trigger("change");
@@ -135,6 +153,9 @@ $(document).ready(function(){
 	// Date start of treatment
 	$("d2-custom-data-entry-form #wqxIyvDXU8R-XCXlfeHO9Nl-val").calendarsPicker({
 		calendar: $.calendars.instance('nepali'),
+		yearRange: '-120:+30',
+		duration: "fast",
+	    showAnim: "",
 		dateFormat: 'yyyy-mm-dd',
 		onSelect: function(dates) {
 			$("d2-custom-data-entry-form #wqxIyvDXU8R-XCXlfeHO9Nl-val").trigger("change");
@@ -153,6 +174,9 @@ $(document).ready(function(){
 	// End of treatment date
 	$("d2-custom-data-entry-form #wqxIyvDXU8R-FPtwX42RYUO-val").calendarsPicker({
 		calendar: $.calendars.instance('nepali'),
+		yearRange: '-120:+30',
+		duration: "fast",
+	    showAnim: "",
 		dateFormat: 'yyyy-mm-dd',
 		onSelect: function(dates) {
 			$("d2-custom-data-entry-form #wqxIyvDXU8R-FPtwX42RYUO-val").trigger("change");
@@ -174,6 +198,9 @@ $(document).ready(function(){
 	
 	$("d2-custom-data-entry-form #YaEQ3p2vtZ6-KpsLzDChXhp-val").calendarsPicker({
 		calendar: $.calendars.instance('nepali'),
+		yearRange: '-120:+30',
+		duration: "fast",
+	    showAnim: "",
 		dateFormat: 'yyyy-mm-dd',
 		onSelect: function(dates) {
 			$("d2-custom-data-entry-form #YaEQ3p2vtZ6-KpsLzDChXhp-val").trigger("change");
@@ -195,6 +222,9 @@ $(document).ready(function(){
 	
 	$("d2-custom-data-entry-form #GdYfroIDDmN-rH2a5ytZIBg-val").calendarsPicker({
 		calendar: $.calendars.instance('nepali'),
+		yearRange: '-120:+30',
+		duration: "fast",
+	    showAnim: "",
 		dateFormat: 'yyyy-mm-dd',
 		onSelect: function(dates) {
 			$("d2-custom-data-entry-form #GdYfroIDDmN-rH2a5ytZIBg-val").trigger("change");
