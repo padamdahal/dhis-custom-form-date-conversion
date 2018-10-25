@@ -1,14 +1,9 @@
 $(document).ready(function(){
 	/***************** registration *********************/
 	// Date of admission
-	$("d2-custom-registration-form input[name=sc3Rnbby1d3]").calendarsPicker('option', {
+	$("d2-custom-registration-form input[name=sc3Rnbby1d3]").calendarsPicker({
 		calendar: $.calendars.instance('nepali'),
-		minDate: function(calendar.minDate) { 
-			return (!calendar.minDate || typeof calendar.minDate != 'object' ? calendar.minDate : calendar.fromJD(calendar.minDate.toJD())); 
-		}, 
-        maxDate: function(calendar.maxDate) { 
-			return (!calendar.maxDate || typeof calendar.maxDate != 'object' ? calendar.maxDate : calendar.fromJD(calendar.maxDate.toJD())); 
-		},
+		minDate: '1900-01-01',
 		dateFormat: 'yyyy-mm-dd',
 		onSelect: function(dates) {
 			$("d2-custom-registration-form input[name=sc3Rnbby1d3]").trigger("change");
