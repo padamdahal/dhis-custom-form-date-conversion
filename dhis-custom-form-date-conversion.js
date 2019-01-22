@@ -58,21 +58,21 @@ $(document).ready(function(){
 	});
 	
 		// Date of birth - event
-	$("d2-custom-registration-form input[name=o1wH0CNAwiI]").calendarsPicker({
+	$("d2-custom-registration-form input[name=tTQr7cLOXOi-o1wH0CNAwiI-val]").calendarsPicker({
 		calendar: $.calendars.instance('nepali'),
 		yearRange: '-120:+30',
 		duration: "fast",
 	    showAnim: "",
 		dateFormat: 'yyyy-mm-dd',
 		onSelect: function(dates) {
-			$("d2-custom-registration-form input[name=o1wH0CNAwiI]").trigger("change");
-			$("d2-custom-registration-form input[name=o1wH0CNAwiI]").trigger("blur");
+			$("d2-custom-registration-form input[name=tTQr7cLOXOi-o1wH0CNAwiI-val]").trigger("change");
+			$("d2-custom-registration-form input[name=tTQr7cLOXOi-o1wH0CNAwiI-val]").trigger("blur");
 			var bsConvertor = new BikramSambatConverter();
 			var npDate = String(dates);
 			var enDate = bsConvertor.nep_to_eng(npDate.substring(0,4), npDate.substring(5,7), npDate.substring(8,10));
-			$("d2-custom-registration-form input[name=WXHUaOqMYde]").val(enDate.year+"-"+enDate.month+"-"+enDate.date);
-			$("d2-custom-registration-form input[name=WXHUaOqMYde]").trigger("change");
-			$("d2-custom-registration-form input[name=WXHUaOqMYde]").trigger("blur");
+			$("d2-custom-registration-form input[name=tTQr7cLOXOi-WXHUaOqMYde-val]").val(enDate.year+"-"+enDate.month+"-"+enDate.date);
+			$("d2-custom-registration-form input[name=tTQr7cLOXOi-WXHUaOqMYde-val]").trigger("change");
+			$("d2-custom-registration-form input[name=tTQr7cLOXOi-WXHUaOqMYde-val]").trigger("blur");
 			$('.ui-datepicker-cmd-close').trigger("click");
 		}
 	});
