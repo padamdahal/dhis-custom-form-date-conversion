@@ -31,8 +31,8 @@ $(document).ready(function(){
 			var npDate = String(dates);
 			var enDate = bsConvertor.nep_to_eng(npDate.substring(0,4), npDate.substring(5,7), npDate.substring(8,10));
 			$(".hasCalendarsPicker").val(enDate.year+"-"+enDate.month+"-"+enDate.date);
-			$("hasCalendarsPicker").trigger("change");
-			$("hasCalendarsPicker").trigger("blur");
+			$(".hasCalendarsPicker").trigger("change");
+			$(".hasCalendarsPicker").trigger("blur");
 			$('.ui-datepicker-cmd-close').trigger("click");
 		}
 	});
