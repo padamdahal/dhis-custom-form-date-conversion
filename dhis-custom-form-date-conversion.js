@@ -21,15 +21,15 @@ $(document).ready(function(){
 	});
 	
 	// Date of admission - Event
-	$("input[input-field-id=SDZ8k24XOtR]").calendarsPicker({
+	$("body input[input-field-id=SDZ8k24XOtR]").calendarsPicker({
 		calendar: $.calendars.instance('nepali'),
 		yearRange: '-120:+30',
 		duration: "fast",
 	    showAnim: "",
 		dateFormat: 'yyyy-mm-dd',
 		onSelect: function(dates) {
-			$("input[input-field-id=SDZ8k24XOtR]").trigger("change");
-			$("input[input-field-id=SDZ8k24XOtR]").trigger("blur");
+			$("body input[input-field-id=SDZ8k24XOtR]").trigger("change");
+			$("body input[input-field-id=SDZ8k24XOtR]").trigger("blur");
 			var bsConvertor = new BikramSambatConverter();
 			var npDate = String(dates);
 			var enDate = bsConvertor.nep_to_eng(npDate.substring(0,4), npDate.substring(5,7), npDate.substring(8,10));
