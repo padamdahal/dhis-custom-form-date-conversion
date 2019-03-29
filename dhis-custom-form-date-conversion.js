@@ -53,9 +53,9 @@ $(document).ready(function(){
 			var bsConvertor = new BikramSambatConverter();
 			var npDate = String(dates);
 			var enDate = bsConvertor.nep_to_eng(npDate.substring(0,4), npDate.substring(5,7), npDate.substring(8,10));
-			$("body input[name=eventDate]").val(enDate.year+"-"+enDate.month+"-"+enDate.date);
-			$("body input[name=eventDate]").trigger("change");
-			$("body input[name=eventDate]").trigger("blur");
+			$("body input[name=enrollmentDate]").val(enDate.year+"-"+enDate.month+"-"+enDate.date);
+			$("body input[name=enrollmentDate]").trigger("change");
+			$("body input[name=enrollmentDate]").trigger("blur");
 			$('.ui-datepicker-cmd-close').trigger("click");
 		}
 	});
